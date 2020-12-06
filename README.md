@@ -8,7 +8,7 @@ Download datasets from the following locations:
 - [https://data.ers.usda.gov/reports.aspx?ID=17828](https://data.ers.usda.gov/reports.aspx?ID=17828)
 - [https://www.cdc.gov/nchs/nvss/bridged_race.htm#Newest%20Data%20Release](https://www.cdc.gov/nchs/nvss/bridged_race.htm#Newest%20Data%20Release)
 
-Unzip all datasets and run the `dataset.py` program.
+Unzip all datasets and create a file called `data.sqlite`. Then, run the `dataset.py` program.
 
 ## Notebook
 
