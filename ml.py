@@ -81,8 +81,8 @@ def train_and_select_model(x_train, y_train):
     # }
     args = {
         'batch_size': 8,
-        'epoch': 20,
-        'learning_rate': 0.0000005, #0.00001 20
+        'epoch': 5,
+        'learning_rate': 0.00001, #0.00001 20
         'hidden_dim': 200,
         'hidden_layer': 20,
         'opt': 'adam',
@@ -149,7 +149,7 @@ if __name__ == "__main__":
     y_predict = model.predict(x_test)
     loss_test, acc_test = model.evaluate(x_test, y_test)
     x_test_demo, y_test_demo = processTestData('testdataage.csv')
-    # y_predict_demo = model.predict(x_test_demo)
-    # np.savetxt('outputage.txt', y_predict_demo)
+    y_predict_demo = model.predict(x_test_demo)
+    np.savetxt('outputage.txt', y_predict_demo)
     print(loss_test, acc_test)
     # print(model.summary())
